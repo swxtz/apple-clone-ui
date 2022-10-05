@@ -141,6 +141,7 @@ header {
   color: #1d1d1f;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 
   #title {
     font-family: 'H3';
@@ -246,3 +247,18 @@ header {
   }
 }
 
+// ---------- Media Querry ----------
+
+@media (max-width: 1024px) {
+  .desktop {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  } 
+  #logo {
+    text-align: center;
+  }
+  .logo_apple {
+    text-align: center;
+  }
+}
